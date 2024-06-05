@@ -5,6 +5,9 @@
     border: solid ;
 }
 
-.txtsobre-nos{
-    columns: 2;
+
+#sobre-nos-legenda{
+    margin-left:10%;
+    width: 500px;
+    height: 10%;
 }
