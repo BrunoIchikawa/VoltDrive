@@ -1,0 +1,10 @@
+.sobrenos{
+    width: 100%;
+    height: 500px;
+    background-color:slategrey;
+    border: solid ;
+}
+
+.txtsobre-nos{
+    columns: 2;
+}
