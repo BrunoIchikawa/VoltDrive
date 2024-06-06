@@ -1,0 +1,132 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    
+}
+
+header{
+    width: 100%;
+    top: 0%;
+    padding: 1%;
+    position:fixed;
+    display: flex; 
+    background-color: aliceblue;
+    flex-direction: row;
+}
+
+
+#menu{
+    width: 4%;
+    height: 4%;
+    display: none;
+}
+#logo{
+
+    width: 20%;
+    height: 80%;
+    margin-left: 20%;
+}
+
+
+
+#home{
+    width: 100%;
+    height: 1000px;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 99%);
+}
+
+.head-texto{
+    margin-top: 3%;
+    margin-left: 22%;
+    position: absolute;
+    color: rgb(1, 212, 255);    
+}
+
+
+.list-cabeca{
+    width: 100%;
+    display:inline-flex;
+    margin-left: 18%;
+    list-style: none;
+    font-size: 180%;
+       
+}
+
+.list-cabeca li a {
+    width: 200%;
+    gap:45px;
+    margin-right: 40px;
+    color: rgb(1, 212, 255);
+    text-decoration: none;
+    color: rgb(1, 212, 255);
+    
+}
+.list-cabeca a:hover {
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px 10px rgb(10, 30, 190);
+    color: rgb(0, 182, 220); /* Define a cor dos links ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+#carrinho,#instagram {
+    margin-top: 70%;
+    width: 70%;
+    height: auto;
+    margin-left: 250%;
+}
+/*Home*/
+
+
+#Home{
+    width: auto;
+    height: 1000px;
+
+    background: rgb(1,212,255);
+    background: linear-gradient(90deg, rgba(1,212,255,1) 0%, rgba(9,9,121,1) 100%);
+}
+
+#carro-cinza{
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+/*Sobre nós*/
+.sobrenos{
+    width: 99.6%;
+    height: 500px;
+    background-color:black;
+    border: solid ;
+}
+
+#titulo-sobre-nos{
+    color:aliceblue;
+    font-size: 250%;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+#grupo{
+    width: auto;
+    height: 400px;
+    margin-top: -10%;
+    margin-left: 50%;
+}
+#sobre-nos-legenda{
+    color: aliceblue;
+    font-size: 110%;
+    margin-left:10%;
+    width: 500px;
+    height: 10%;
+}
+/*Responsividade*/
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
