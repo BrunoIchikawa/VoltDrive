@@ -46,7 +46,7 @@ header{
 .list-cabeca{
     width: 100%;
     display:inline-flex;
-    margin-left: 18%;
+    margin-left: 10%;
     list-style: none;
     font-size: 180%;
        
@@ -63,7 +63,6 @@ header{
 }
 .list-cabeca a:hover {
     border-radius: 10px;
-    box-shadow: 0px 10px 50px 10px rgb(10, 30, 190);
     color: rgb(0, 182, 220); /* Define a cor dos links ao passar o mouse */
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
@@ -72,7 +71,7 @@ header{
     margin-top: 70%;
     width: 70%;
     height: auto;
-    margin-left: 250%;
+    margin-left: 80%;
 }
 /*Home*/
 
@@ -85,10 +84,19 @@ header{
     background: linear-gradient(90deg, rgba(1,212,255,1) 0%, rgba(9,9,121,1) 100%);
 }
 
-#carro-cinza{
-    margin-left: 40%;
-    margin-top: 20%;
+ body{
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    height: 100vw   ;
 }
+/*Slider*/
+
+
+
+
+
+
 
 /*Sobre nós*/
 .sobrenos{
