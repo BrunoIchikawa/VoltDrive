@@ -4,137 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
     <header>
         <nav class="bar">
-            <img src="img/menu.png" alt="Menu" id="menu" onclick="toggleMenu()">
+            <img src="./src/assets/img/" alt="Menu" id="menu" onclick="toggleMenu()">
             <div id="logo">
-                <a href="#Home"><img src="img/logo escuro vetorizado.png" alt="Logo"></a>
+                <a href="#Home"><img src="./src/assets/img/logo escuro vetorizado.png" alt="Logo"></a>
             </div>
             <h2 class="head-texto">VOLTDRIVE</h2>
             <nav>
                 <ul class="list-cabeca">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Serviços">Serviços</a></li>
-                    <li><a href="#Sobre-nos">Sobre nós</a></li>
+                    <li><a href="#sobreNos">Sobre nós</a></li>
                 </ul>
             </nav>
         </nav>
     </header>
 
-    <div id="menu-content" class="menu-content">
+
+    <main>
+
+    <div id="menu-content" >
         <ul>
             <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
             <li><a href="#Serviços" onclick="toggleMenu()">Serviços</a></li>
-            <li><a href="#Sobre-nos" onclick="toggleMenu()">Sobre nós</a></li>
+            <li><a href="#sobreNos" onclick="toggleMenu()">Sobre nós</a></li>
         </ul>
     </div>
 
     <section id="Home">
         <div class="slideshow-container">
-            <img class="img-slide" name="slide" src="img/car-branco-bg.png">
+            <img class="img-slide" name="slide" src="./src/assets/img/car-branco-bg.png" alt="Slide">
             
-            <!-- <div class="mySlides fade">
-                <img class="img-slide" src="img/car-cinza-bg.png">
-            </div>
-            <div class="mySlides fade">
-                <img class="img-slide" src="img/car-cinza.png">
-            </div>
-            <div class="mySlides fade">
-                <img class="img-slide" src="img/car-verme.png">
-            </div>-->
             <div class="botoes">
-                <span id="bt1" class="dot" onClick="Posiciona(1)"></span> 
-                <span id="bt2" class="dot" onClick="Posiciona(2)"></span> 
-                <span id="bt3" class="dot" onClick="Posiciona(3)"></span>
-                <span id="bt4" class="dot" onClick="Posiciona(4)"></span> 
+                <span id="bt1" class="dot" onclick="posiciona(1)"></span>
+                <span id="bt2" class="dot" onclick="posiciona(2)"></span>
+                <span id="bt3" class="dot" onclick="posiciona(3)"></span>
+                <span id="bt4" class="dot" onclick="posiciona(4)"></span>
             </div>
-        </div>          
+        </div>
     </section>
-    <section class="sobrenos">
+    
+    
+    <section class="sobrenos" id="sobreNos">
         <h2 id="titulo-sobre-nos">Sobre nós</h2>
-        <p id="sobre-nos-legenda">
-            A Volt Drive é líder na produção de carros elétricos, fundada em 2024 por entusiastas da mobilidade sustentável. 
-            Oferecemos uma linha diversificada, incluindo o compacto Modelo Z, o familiar Modelo X e o luxuoso Modelo S. 
-            Nossa tecnologia de ponta inclui baterias de próxima geração e sistemas de inteligência artificial integrados.
-            Comprometidos com práticas sustentáveis, desde a produção até o uso dos veículos, minimizando nossa pegada ecológica.
-            Na Volt Drive, estamos moldando o futuro da mobilidade, combinando inovação, desempenho e sustentabilidade em cada carro
-            que fabricamos.
-        </p>
-        
-        <img src="img/grupinho.jpg" alt="grupo" id="grupo">
+        <div class="sobrenos-content">
+            <p id="sobre-nos-legenda">
+                A Volt Drive é líder na produção de carros elétricos, fundada em 2024 por entusiastas da mobilidade sustentável. 
+                Oferecemos uma linha diversificada, incluindo o compacto Modelo Z, o familiar Modelo X e o luxuoso Modelo S. 
+                Nossa tecnologia de ponta inclui baterias de próxima geração e sistemas de inteligência artificial integrados.
+                Comprometidos com práticas sustentáveis, desde a produção até o uso dos veículos, minimizando nossa pegada ecológica.
+                Na Volt Drive, estamos moldando o futuro da mobilidade, combinando inovação, desempenho e sustentabilidade em cada carro
+                que fabricamos.
+            </p>
+            <img src="./src/assets/img/grupinho.jpg" alt="grupo" id="grupoImg">
+        </div>
+    </section>
+    
     </section>
 
-    <!--SERVIÇOS-->
+    <!--SERVIÇOS NUNCA COLOCAR ACENTOS OU CARACTERES ESPECIAS EM NOME DE ID OU CLASS-->
     <section class="servicos" id="Serviços">
         <div class="card-container">
             <div class="card">
-                <img src="img/card1.png" alt="">
+                <div>
+                    <img src="./src/assets/img/card1.png" alt="">
+
+                </div>
                 <div class="card-content">
                     <h3>Reparo</h3>
                     <p>Serviços de manutenção e reparo especializados para carros eletricos,incluindo diagnóstico de problemas,substituição de baterias e manutenção de sistemas elétricos.
                     </p>
-                    <a href="" class="btn">Read more</a>
+                    <a href="" class="btn">Ver</a>
                 </div>
             </div>
             <div class="card">
-                <img src="img/card22.png" alt="">
+                <div>
+                    <img src="./src/assets/img/card2.png" alt="">
+
+                </div>
                 <div class="card-content">
                     <h3>Consultoria</h3>
                     <p>Serviços de consultoria para empresas e governos interessados em trasição para veiculos elétricos,incluindo aconselhamento sobre infraestrutura dev carregamento,políticas de incentivo estratégias de frota.
                     </p>
-                    <a href="" class="btn">Read more</a>
+                    <a href="" class="btn">Ver</a>
                 </div>
             </div>
             
             <div class="card">
-                <img src="img/card4.png" alt="">
+                <img src="./src/assets/img/card4.png" alt="">
                 <div class="card-content">
                     <h3>Reciclagem de baterias</h3>
                     <p>Desenvolver um serviço de reciclagem de baterias de íon-lítio, garantindo o descarte responsável e sustentável desses componentes.
                     </p>
-                    <a href="" class="btn">Read more</a>
+                    <a href="" class="btn">Ver</a>
                 </div>
             </div>
             <div class="card">
-                <img src="img/card5.png" alt="">
+
+                <div class="imgCard">
+                    <img src="./src/assets/img/card5.png" alt="">
+                </div>
                 <div class="card-content">
                     <h3>Troca de carros</h3>
                     <p> Implementar um programa de incentivo para proprietários de carros a combustão trocarem seus veículos por modelos elétricos, oferecendo descontos na compra, instalação de estações de carregamento em casa e outros benefícios.
                     </p>
-                    <a href="" class="btn">Read more</a>
+                    <a href="" class="btn">Ver</a>
                 </div>
             </div>
             <div class="card">
-                <img src="img/card6.png" alt="">
+                <div>
+                    <img src="./src/assets/img/card6.png" alt="">
+                </div>
                 <div class="card-content">
                     <h3>Sistemas de gerenciamento de energia</h3>
                     <p>Desenvolver e instalar sistemas inteligentes de gerenciamento de energia para residências e empresas que possuem carros elétricos, otimizando o carregamento e reduzindo os custos de energia.
                     </p>
-                    <a href="" class="btn">Read more</a>
+                    <a href="" class="btn">Ver</a>
                 </div>
             </div>
             <div class="card">
-                <img src="img/card7.png" alt="">
+                <img src="./src/assets/img/card7.png" alt="">
                 <div class="card-content">
                     <h3>Testes e certificações de segurança</h3>
                     <p>Oferecer serviços de testes e certificação de segurança para veículos elétricos e componentes relacionados, garantindo conformidade com regulamentações e normas de segurança.
                     </p>
-                    <a href="" class="btn">Read more</a>
+                    <a href="" class="btn">Ver</a>
                 </div>
             </div>  
         </div>
     </section>
+
+</main>
+
     <footer>
         <div class="footer-content">
             <a href="https://www.instagram.com/voltdrive2k24?igsh=MTE2NmF0aW96OGZobQ%3D%3D" target="_blank">
-                <img src="img/instagram.png" alt="Instagram" id="instagram">
+                <img src="./src/assets/img/instagram.png" alt="Instagram" id="instagram">
             </a>
             <a href="https://www.google.com/maps/dir//R.+Guaip%C3%A1,+678+-+Vila+Leopoldina,+S%C3%A3o+Paulo+-+SP,+05089-000/@-23.5207969,-46.8101881,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cef8c1d371ec31:0x671c9325c275132e!2m2!1d-46.7277865!2d-23.5208186?entry=ttu" target="_blank">
-                <img src="img/local-icon.png" alt="Localização" id="localizacao">
+                <img src="./src/assets/img/local-icon.png" alt="Localização" id="localizacao">
             </a>
         </div>
         <div class="footer-text">
@@ -142,7 +154,6 @@
         </div>
     </footer>
         
-    <script src="carrossel.js"></script>
-    <script src="script.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
