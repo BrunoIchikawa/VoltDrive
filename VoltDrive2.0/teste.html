@@ -1,335 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>How to design car template</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-  <style>
-    *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
-a,a:hover{
-  text-decoration: none;
-  color: #fff;
-}
-
-ul{
-  list-style: none;
-}
-
-li{
-  display: inline-block;
-}
-
-#header{
-  width: 100%;
-  height: 100vh;
-  background: #26284e;
-  background-image: url(img/bg.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-
-#header .nav-bar{
-  width: 90%;
-  height: 80px;
-  margin: auto;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 80px;
-}
-
-#header .nav-bar .logo{
-  margin-left: 50px;
-}
-
-#header .nav-bar .logo a{
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
-#header .nav-bar .logo span{
-  font-size: 35px;
-  color: #d43242;
-  margin-left: 5px;
-}
-
-#header .nav-bar .menu ul li{
-  margin-right: 30px;
-}
-
-#header .nav-bar .menu ul li a{
-  font-size: 19px;
-  opacity: 0.6;
-  letter-spacing: 2px;
-  padding: 10px 10px;
-  border-radius: 5px;
-  text-transform: capitalize;
-  transition: all 0.5s;
-}
-
-#header .nav-bar .menu ul li a.active{
-  opacity: 1;
-}
-
-#header .nav-bar .menu ul li span{
-  position: absolute;
-  top: 0px;
-  color: #d43242;
-  font-size: 75px;
-}
-
-#header .nav-bar .menu ul li a:hover{
-  opacity: 1;
-}
-
-#header .nav-bar .social-media ul li i{
-  width: 45px;
-  height: 45px;
-  margin-right: 5px;
-  line-height: 45px;
-  border-radius: 50px;
-  text-align: center;
-  align-items: center;
-  font-size: 19px;
-  background-color: #cac5c542;
-  transition: all 0.3s ease-in-out;
-}
-
-#header .nav-bar .social-media ul li i:hover{
-  background-color: rgb(255 0 0 / 0.9);
-}
-
-.hero{
-  width: 100%;
-}
-
-.hero .row{
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 50px;
-  margin: auto;
-}
-
-.hero .row .left-sec{
-  width: 30%;
-  margin-top: 100px;
-  margin-left: 50px;
-}
-
-.hero .row .left-sec h2{
-  font-size: 85px;
-  color: #fff;
-}
-
-.hero .row .left-sec h2 span{
-  color: #d43242;
-}
-
-.hero .row .left-sec p{
-  margin: 20px 0;
-  color: #fff;
-  line-height: 28px;
-  padding-right: 150px;
-}
-
-.hero .left-sec .discover-btn{
-  display: flex;
-  align-items: center;
-  outline: none;
-  border-radius: 50px;
-  cursor: pointer;
-  margin-top: 50px;
-  padding: 0 25px;
-  border: 3px solid #ffa938;
-  background-color: #d43242;
-  box-shadow: 5px 7px 20px #000;
-}
-
-.hero .left-sec .discover-btn a{
-  color: #fff;
-  font-size: 25px;
-  letter-spacing: 2px;
-  margin-right: 15px;
-  text-transform: capitalize;
-}
-
-.hero .left-sec .discover-btn span{
-  color: #fff;
-  font-size: 45px;
-}
-
-.hero .information{
-  width: 100%;
-  display: flex;
-  margin-top: 100px;
-}
-
-.hero .information .production{
-  margin-right: 50px;
-  line-height: 3px;
-}
-
-.hero .information .production h2{
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-.hero .information .production p{
-  padding-right: 0;
-  letter-spacing: 1px;
-}
-
-.hero .right-sec{
-  width: 70%;
-  padding-top: 100px;
-}
-
-.hero .right-sec img{
-  width: 950px;
-  height: 550px;
-  margin: auto;
-  float: right;
-}
-
-.slick-prev, .slick-next {
-  top: 110%;
-  z-index: 999;
-}
-
-.slick-prev {
-  position: absolute;
-  left: 950px;
-}
-
-.slick-next {
-  position: absolute;
-  right: 178px;
-}
-
-.slick-prev:before, .slick-next:before {
-    font-size: 45px;
-}
-
-.slick-dots {
-  padding-left: 450px;
-  margin-bottom: -50px;  
-}
-
-.slick-dots li{
-  margin-right: 15px;
-}
-
-.slick-dots li.slick-active:after{
-  position: absolute;
-  content: '.';
-  top: 0;
-  bottom: -15px;
-  left: 6px;
-  opacity: 1;
-  color: red;
-  font-size: 36px;
-}
-
-.slick-slide {
-    outline: none;
-}
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/estilo.css">
+  <title>Document</title>
 </head>
 
 <body>
-  <section id="header" class="header">
-    <div class="nav-bar">
-      <div class="logo">
-        <a href="index.html">Chevrolet<span>.</span></a>
+  <div class="header" id="header">
+    <nav>
+      <img src="./src/assets/img/logo vetorizado.png" class="logo">
+      <ul id="slider">
+        <li><a href="#" id="modeloX">Model X</a></li>
+        <li><a href="#" id="modeloY">Model Y</a></li>
+        <li><a href="#" id="modeloZ">Model Z</a></li>
+        <li><a href="#" id="modeloMini">Model Mini</a></li>
+      </ul>
+      <a href="#" class="btn">Reservar agora</a>
+    </nav>
+
+    <div class="info">
+      <div class="info1">
+        <h2>1.9 s</h2>
+        <p>60mph</p>
       </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#" class="active">Cars<span>.</span></a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Technology</a></li>
-          <li><a href="#">Production</a></li>
-          <li><a href="#">Reviews</a></li>
-        </ul>
+      <div class="info2">
+        <h2>200 mph</h2>
+        <p>Top speed</p>
       </div>
-      <div class="social-media">
-        <ul>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-        </ul>
+      <div class="info3">
+        <h2>396 mi</h2>
+        <p>Max range</p>
+      </div>
+      <div class="line"></div>
+      <div info4>
+        <h2 id="model">Model S</h2>
       </div>
     </div>
-    <div class="hero">
-      <div class="row">
-        <div class="left-sec">
-          <div class="content">
-            <h2><span>Chevrolet</span><br>Camaro</h2>
-            <p>It is a long established fact that a set reader will distracted by the readable content of a page when looking at its layout technology.</p>
-          </div>
-          <button class="discover-btn">
-            <a href="#">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
-          </button>
-          <div class="information">
-            <div class="production">
-              <p>Production</p>
-              <h2>1966-2019</h2>
+  </div>
+  <section class="modelos" id="Modelos">
+    <h2>Outros Modelos</h2>
+    <div class="modelos-container">
+        <div class="modelo-card">
+            <img src="../VoltDrive2.0/src/assets/img/modelo-a.png" alt="Modelo A">
+            <div class="modelo-content">
+                <h3>Modelo A</h3>
+                <p>O compacto urbano, ideal para deslocamentos diários com eficiência energética e um design moderno.</p>
             </div>
-            <div class="production">
-              <p>Designer</p>
-              <h2>George Angersbach</h2>
-            </div>
-          </div>
         </div>
-        <div class="right-sec">
-          <div class="my-car">
-            <div><img src="img/1.png"></div>
-            <div><img src="img/2.png"></div>
-            <div><img src="img/3.png"></div>
-            <div><img src="img/4.png"></div>
-            <div><img src="img/5.png"></div>
+        <div class="modelo-card">
+            <img src="../VoltDrive2.0/src/assets/img/modelo-v.png" alt="Modelo V">
+            <div class="modelo-content">
+                <h3>Modelo V</h3>
+                <p>Perfeito para famílias, com amplo espaço interno e a mais recente tecnologia em segurança.</p>
+            </div>
+        </div>
+        <div class="modelo-card">
+            <img src="../VoltDrive2.0/src/assets/img/modelo s.png" alt="Modelo S">
+            <div class="modelo-content">
+                <h3>Modelo S</h3>
+                <p>Luxo e desempenho se encontram no Modelo S, para uma experiência de condução inigualável.</p>
+            </div>
+        </div>
+    </div>
+</section>
+  <section class="sobrenos" id="sobreNos">
+    <h2 id="titulo-sobre-nos">Sobre nós</h2>
+    <div class="sobrenos-content">
+      <p id="sobre-nos-legenda">
+        A Volt Drive é líder na produção de carros elétricos, fundada em 2024 por entusiastas da mobilidade sustentável.
+        Oferecemos uma linha diversificada, incluindo o compacto Modelo Z, o familiar Modelo X e o luxuoso Modelo S.
+        Nossa tecnologia de ponta inclui baterias de próxima geração e sistemas de inteligência artificial integrados.
+        Comprometidos com práticas sustentáveis, desde a produção até o uso dos veículos, minimizando nossa pegada
+        ecológica. Na Volt Drive, estamos moldando o futuro da mobilidade, combinando inovação, desempenho e
+        sustentabilidade em cada carro que fabricamos.
+      </p>
+      <img src="./src/assets/img/grupinho.jpg" alt="grupo" id="grupoImg">
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="imgCard">
+          <img src="./src/assets/img/card1.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Reparo</h3>
+          <div class="legendaCard">
+            <p>Serviços de manutenção e reparo especializados para carros elétricos, incluindo diagnóstico de
+              problemas, substituição de baterias e manutenção de sistemas elétricos.</p>
           </div>
+          <a href="" class="btn">Ver</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="imgCard">
+          <img src="./src/assets/img/card2.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Consultoria</h3>
+          <div class="legendaCard">
+            <p>Serviços de consultoria para empresas e governos interessados em transição para veículos elétricos,
+              incluindo aconselhamento sobre infraestrutura de carregamento, políticas de incentivo e estratégias de
+              frota.</p>
+          </div>
+          <a href="" class="btn">Ver</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="imgCard">
+          <img src="./src/assets/img/card4.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Reciclagem de baterias</h3>
+          <div class="legendaCard">
+            <p>Desenvolver um serviço de reciclagem de baterias de íon-lítio, garantindo o descarte responsável e
+              sustentável desses componentes.</p>
+          </div>
+          <a href="" class="btn">Ver</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="imgCard">
+          <img src="./src/assets/img/card5.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Troca de carros</h3>
+          <div class="legendaCard">
+            <p>Implementar um programa de incentivo para proprietários de carros a combustão trocarem seus veículos por
+              modelos elétricos, oferecendo descontos na compra, instalação de estações de carregamento em casa e outros
+              benefícios.</p>
+          </div>
+          <a href="" class="btn">Ver</a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="imgCard">
+          <img src="./src/assets/img/card6.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Sistemas de gerenciamento de energia</h3>
+          <div class="legendaCard">
+            <p>Desenvolver e instalar sistemas inteligentes de gerenciamento de energia para residências e empresas que
+              possuem carros elétricos, otimizando o carregamento e reduzindo os custos de energia.</p>
+          </div>
+          <a href="" class="btn">Ver</a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="imgCard">
+          <img src="./src/assets/img/card7.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Testes e certificações de segurança</h3>
+          <div class="legendaCard">
+            <p>Oferecer serviços de testes e certificação de segurança para veículos elétricos e componentes
+              relacionados, garantindo conformidade com regulamentações e normas de segurança.</p>
+          </div>
+          <a href="" class="btn">Ver</a>
         </div>
       </div>
     </div>
   </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-  $(document).ready(function(){
-    
-  });
+  <footer>
+    <div class="footer-content">
+      <a href="https://www.instagram.com/voltdrive2k24?igsh=MTE2NmF0aW96OGZobQ%3D%3D" target="_blank">
+        <img src="./src/assets/img/instagram.png" alt="Instagram" id="instagram">
+      </a>
+      <a href="https://www.google.com/maps/dir//R.+Guaip%C3%A1,+678+-+Vila+Leopoldina,+S%C3%A3o+Paulo+-+SP,+05089-000/@-23.5207969,-46.8101881,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cef8c1d371ec31:0x671c9325c275132e!2m2!1d-46.7277865!2d-23.5208186?entry=ttu"
+        target="_blank">
+        <img src="./src/assets/img/local-icon.png" alt="Localização" id="localizacao">
+      </a>
+    </div>
+    <div class="footer-text">
+      © 2024 VOLTDRIVE. Todos os direitos reservados.
+    </div>
+  </footer>
 
-  $(".my-car").slick({
-    autoplay: true,
-	  speed:1000,
-    dots: true,
-    customPaging : function(slider, i) {
-    var thumb = $(slider.$slides[i]).data();
-    return '<a>'+(i+1)+'</a>';
-  },
-   
-});
-</script>
+  <script>
+    // Funções de clique para mudar os slides manualmente
+    document.getElementById("modeloX").onclick = function () { changeSlide(0); }
+    document.getElementById("modeloY").onclick = function () { changeSlide(1); }
+    document.getElementById("modeloZ").onclick = function () { changeSlide(2); }
+    document.getElementById("modeloMini").onclick = function () { changeSlide(3); }
+
+    // Array de modelos e imagens para facilitar o controle
+    var slides = [
+      { img: "./src/assets/img/image-1.png", name: "Model X" },
+      { img: "./src/assets/img/image-2.png", name: "Model Y" },
+      { img: "./src/assets/img/image-3.png", name: "Model Z" },
+      { img: "./src/assets/img/image-4.png", name: "Model Mini" }
+    ];
+
+    // Função para trocar as imagens e os textos
+    function changeSlide(index) {
+      document.getElementById("header").style.backgroundImage = `url(${slides[index].img})`;
+      document.getElementById("model").innerText = slides[index].name;
+    }
+  </script>
 </body>
+
 </html>
